@@ -32,7 +32,7 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
 
-    case @operations.downcase
+    case @operation.downcase
     when "add"
       "#{@number1 + @number2}"
     when "subtract"
